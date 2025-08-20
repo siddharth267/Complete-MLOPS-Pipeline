@@ -1,0 +1,14 @@
+data_ingestion:
+  source: data/spam.csv
+  train_path: data/train.csv
+  test_path: data/test.csv
+  test_size: 0.2
+  random_state: 42
+feature_engineering:
+  max_features: 5000
+  ngram_range:
+  - 1
+  - 2
+model_building:
+  n_estimators: 22
+  random_state: 2
